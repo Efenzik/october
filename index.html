@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Антидепрессант — Lyric Visual</title>
+    <link rel="stylesheet" href="./particles.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container particles-container">
+      <h1 class="title">ILY💕</h1>
+      <div class="tilted-card">
+        <div class="tilted-card-inner">
+          <img src="./eyes.jpg" alt="Eye visual" />
+          <div class="tilted-card-caption">FACE — Антидепрессант</div>
+        </div>
+      </div>
+
+      <div class="lyric-line" id="current-line"></div>
+
+      <div class="controls">
+        <button id="play-btn">Play</button>
+        <span id="time">0:00 / 0:00</span>
+        <input
+          type="range"
+          id="progress"
+          class="progress"
+          value="0"
+          step="0.01"
+        />
+      </div>
+
+      <div class="mini-lyrics" id="mini-lyrics"></div>
+
+      <audio id="audio" src="./face-trand.mp3" preload="metadata"></audio>
+    </div>
+    <script type="module" src="./Particles.js"></script>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
